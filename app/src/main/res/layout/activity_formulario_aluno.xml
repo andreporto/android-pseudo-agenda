@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal|center_vertical"
         android:orientation="vertical">
 
         <EditText
@@ -16,27 +14,31 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:hint="Nome do Aluno"
-            android:inputType="textCapWords" />
-
-        <EditText
-            android:id="@+id/activity_formulario_aluno_email"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:hint="Email do Aluno"
-            android:inputType="textEmailAddress" />
+            android:hint="@string/nome"
+            android:inputType="textCapWords"
+            android:importantForAutofill="no"
+            tools:targetApi="o" />
 
         <EditText
             android:id="@+id/activity_formulario_aluno_telefone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:hint="Telefone do Aluno"
-            android:inputType="phone" />
+            android:hint="@string/telefone"
+            android:inputType="phone"
+            android:importantForAutofill="no"
+            tools:targetApi="o" />
 
+        <EditText
+            android:id="@+id/activity_formulario_aluno_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:importantForAutofill="no"
+            tools:targetApi="o" />
 
     </LinearLayout>
 
 </ScrollView>
-
